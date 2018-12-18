@@ -47,7 +47,7 @@
   </parent>
 
   <properties>
-    <nativeEnv>win64</nativeEnv>
+    <nativeEnv>linux64</nativeEnv>
   </properties>
 
   <dependencies>
