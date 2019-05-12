@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 cmake . \
     -DCMAKE_BUILD_TYPE=Release \
     -DCMAKE_COLOR_MAKEFILE=on \
@@ -14,6 +16,6 @@ cp ogre3d/linux64/bin/OgreOverlay.so ../../../../target/classes/linux64
 cp ogre3d/linux64/bin/Plugin_ParticleFX.so ../../../../target/classes/linux64
 cp ogre3d/linux64/bin/RenderSystem_GL.so ../../../../target/classes/linux64
 
-return $r1
+exit $r1
 
 
