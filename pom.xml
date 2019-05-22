@@ -48,13 +48,17 @@
 
   <properties>
     <nativeEnv>linux64</nativeEnv>
+    <module-graphic-ogre.version>2.1.3-SNAPSHOT</module-graphic-ogre.version>
+    <module-physfs.version>1.0.0-SNAPSHOT</module-physfs.version>
+    <component-native-ogre3d.version>1.10.11.2</component-native-ogre3d.version>
+    <component-native-physicsfs.version>3.0.1.1</component-native-physicsfs.version>
   </properties>
 
   <dependencies>
     <dependency>
       <groupId>be.yildiz-games</groupId>
       <artifactId>module-graphic-ogre</artifactId>
-      <version>2.1.3-SNAPSHOT</version>
+      <version>${module-graphic-ogre.version}</version>
     </dependency>
   </dependencies>
 
@@ -71,20 +75,20 @@
     <profile>
       <id>build</id>
       <dependencies>
+       <dependency>
+          <groupId>be.yildiz-games</groupId>
+          <artifactId>module-vfs-physfs-win64</artifactId>
+          <version>${module-physfs.version}</version>
+        </dependency>
         <dependency>
           <groupId>be.yildiz-games</groupId>
           <artifactId>component-native-ogre3d</artifactId>
-          <version>1.10.11.2</version>
+          <version>${component-native-ogre3d.version}</version>
         </dependency>
         <dependency>
           <groupId>be.yildiz-games</groupId>
           <artifactId>component-native-physicsfs</artifactId>
-          <version>3.0.1.1</version>
-        </dependency>
-        <dependency>
-          <groupId>be.yildiz-games</groupId>
-          <artifactId>component-native-boost</artifactId>
-          <version>1.66.0.1</version>
+          <version>${component-native-physicsfs.version}</version>
         </dependency>
       </dependencies>
       <build>
@@ -104,25 +108,29 @@
                     <artifactItem>
                       <groupId>be.yildiz-games</groupId>
                       <artifactId>module-graphic-ogre</artifactId>
+                      <version>${module-graphic-ogre.version}</version>
                       <outputDirectory>src/</outputDirectory>
                       <includes>main/**/*.*</includes>
                     </artifactItem>
                     <artifactItem>
                       <groupId>be.yildiz-games</groupId>
+                      <artifactId>module-vfs-physfs-linux64</artifactId>
+                      <version>${module-physfs.version}</version>
+                      <outputDirectory>src/main/scripts/linux64/physicsfs</outputDirectory>
+                      <includes>linux64/**/*.*</includes>
+                    </artifactItem>
+                    <artifactItem>
+                      <groupId>be.yildiz-games</groupId>
                       <artifactId>component-native-ogre3d</artifactId>
                       <outputDirectory>src/main/scripts/linux64/ogre3d</outputDirectory>
+                      <version>${component-native-ogre3d.version}</version>
                       <includes>linux64/**/*.*</includes>
                     </artifactItem>
                     <artifactItem>
                       <groupId>be.yildiz-games</groupId>
                       <artifactId>component-native-physicsfs</artifactId>
                       <outputDirectory>src/main/scripts/linux64/physicsfs</outputDirectory>
-                      <includes>linux64/**/*.*</includes>
-                    </artifactItem>
-                    <artifactItem>
-                      <groupId>be.yildiz-games</groupId>
-                      <artifactId>component-native-boost</artifactId>
-                      <outputDirectory>src/main/scripts/linux64/boost</outputDirectory>
+                      <version>${component-native-physicsfs.version}</version>
                       <includes>linux64/**/*.*</includes>
                     </artifactItem>
                   </artifactItems>
