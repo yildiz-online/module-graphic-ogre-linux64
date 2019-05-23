@@ -77,7 +77,7 @@
       <dependencies>
        <dependency>
           <groupId>be.yildiz-games</groupId>
-          <artifactId>module-vfs-physfs-win64</artifactId>
+          <artifactId>module-vfs-physfs-linux64</artifactId>
           <version>${module-physfs.version}</version>
         </dependency>
         <dependency>
