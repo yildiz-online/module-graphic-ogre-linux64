@@ -11,10 +11,10 @@ make
 r1=$?
 
 cp physicsfs/linux64/libyildizphysfs.so     ../../../../target/classes/linux64
-cp ogre3d/linux64/bin/OgreMain.so ../../../../target/classes/linux64
-cp ogre3d/linux64/bin/OgreOverlay.so ../../../../target/classes/linux64
-cp ogre3d/linux64/bin/Plugin_ParticleFX.so ../../../../target/classes/linux64
-cp ogre3d/linux64/bin/RenderSystem_GL.so ../../../../target/classes/linux64
+cp ogre3d/linux64/lib/OgreMain.so ../../../../target/classes/linux64
+cp ogre3d/linux64/lib/OgreOverlay.so ../../../../target/classes/linux64
+cp ogre3d/linux64/lib/Plugin_ParticleFX.so ../../../../target/classes/linux64
+cp ogre3d/linux64/lib/RenderSystem_GL.so ../../../../target/classes/linux64
 
 exit $r1
 
