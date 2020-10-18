@@ -27,7 +27,7 @@
   <modelVersion>4.0.0</modelVersion>
   <name>Yildiz Module Graphic Ogre for linux 64</name>
   <description>Ogre linux 64 implementation for the graphic module.</description>
-  <url>https://bitbucket.org/yildiz-engine-team/module-graphic-ogre-linux64</url>
+  <url>https://github.com/yildiz-online/module-graphic-ogre-linux64</url>
 
   <artifactId>module-graphic-ogre-linux64</artifactId>
   <version>1.0.3-SNAPSHOT</version>
@@ -35,10 +35,10 @@
   <packaging>jar</packaging>
   <inceptionYear>2018</inceptionYear>
   <scm>
-    <connection>scm:git:https://bitbucket.org/yildiz-engine-team/module-graphic-ogre-linux64</connection>
-    <developerConnection>scm:git:https://bitbucket.org/yildiz-engine-team/module-graphic-ogre-linux64
+    <connection>scm:git:https://github.com/yildiz-online/module-graphic-ogre-linux64</connection>
+    <developerConnection>scm:git:https://github.com/yildiz-online/module-graphic-ogre-linux64
     </developerConnection>
-    <url>https://bitbucket.org/yildiz-engine-team/module-graphic-ogre-linux64</url>
+    <url>https://github.com/yildiz-online/module-graphic-ogre-linux64</url>
   </scm>
   <parent>
     <groupId>be.yildiz-games</groupId>
